@@ -10,5 +10,5 @@ dependencies {
   implementation 'com.custom.webview:webview:1.0.2'
 }
 
-DialogFragment webFragment = WebFragment.newInstance(DashBoardUtils.getHeader(activity), url);
-((WebFragment) webFragment).setJsCustom(<class> extend JsDashBoardBase);
+DialogFragment webFragment = WebFragment.newInstance(< Map<String,String> >, url);
+((WebFragment) webFragment).setJsCustom(<class> extend JsCustomBase);
