@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_00"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_keyboard_space"
+        android:background="@color/transparent_00"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/padding_normal">
+
+        <RelativeLayout
+            android:id="@+id/rl_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.custom.webview.CustomWebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="13dp"
+                android:padding="@dimen/padding_normal"
+                android:src="@drawable/ic_close_custom" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_keyboard_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/layout_tmp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/left_drawer"
+        android:layout_weight="1"
+        android:background="#80000000"
+        android:duplicateParentState="true" />
+</RelativeLayout>

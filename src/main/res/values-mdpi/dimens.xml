@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="height_dashborad">416dp</dimen>
+    <dimen name="padding_xnormal">10dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_snormal">4dp</dimen>
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_ssmall">1dp</dimen>
+    <dimen name="padding_large">14dp</dimen>
+
+
+</resources>
